@@ -30,3 +30,12 @@ const buildTest = function build(n){
 }
 buildTest(5);
 console.log(locations);
+
+const bodyObject = document.getElementById("bodyContainer");
+let imageIndex = 1;
+
+setInterval(function(){    
+    imageIndex == 6 ? imageIndex = 1 : ''
+    bodyObject.style.background = "url('0"+ imageIndex +".jpg') no-repeat center center fixed";
+    imageIndex += 1;
+}, 3000);
